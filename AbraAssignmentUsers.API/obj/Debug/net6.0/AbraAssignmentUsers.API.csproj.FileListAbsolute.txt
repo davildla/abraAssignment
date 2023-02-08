@@ -1,0 +1,7 @@
+C:\Users\דוד\source\repos\AbraAssignmentUsers.API\AbraAssignmentUsers.API\obj\Debug\net6.0\AbraAssignmentUsers.API.csproj.AssemblyReference.cache
+C:\Users\דוד\source\repos\AbraAssignmentUsers.API\AbraAssignmentUsers.API\obj\Debug\net6.0\AbraAssignmentUsers.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\דוד\source\repos\AbraAssignmentUsers.API\AbraAssignmentUsers.API\obj\Debug\net6.0\AbraAssignmentUsers.API.AssemblyInfoInputs.cache
+C:\Users\דוד\source\repos\AbraAssignmentUsers.API\AbraAssignmentUsers.API\obj\Debug\net6.0\AbraAssignmentUsers.API.AssemblyInfo.cs
+C:\Users\דוד\source\repos\AbraAssignmentUsers.API\AbraAssignmentUsers.API\obj\Debug\net6.0\AbraAssignmentUsers.API.csproj.CoreCompileInputs.cache
+C:\Users\דוד\source\repos\AbraAssignmentUsers.API\AbraAssignmentUsers.API\obj\Debug\net6.0\AbraAssignmentUsers.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\דוד\source\repos\AbraAssignmentUsers.API\AbraAssignmentUsers.API\obj\Debug\net6.0\AbraAssignmentUsers.API.MvcApplicationPartsAssemblyInfo.cache
