@@ -1,5 +1,5 @@
 ﻿using AbraAssignmentUsers.API.Models.Domain;
-using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace AbraAssignmentUsers.API.Data
 {

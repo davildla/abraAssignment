@@ -1,4 +1,6 @@
-﻿namespace AbraAssignmentUsers.API.Validations
+﻿using FluentValidation;
+
+namespace AbraAssignmentUsers.API.Validations
 {
     public class AddUserRequestValidator : AbstractValidator<Models.DTO.AddUserRequest>
     {
@@ -8,7 +10,7 @@
             RuleFor(x => x.Email).NotEmpty().WithMessage("Email address is required")
                      .EmailAddress().WithMessage("A valid email is required");
             RuleFor(x => x.Gender).NotEmpty().WithMessage("Gender is required");
-            RuleFor(x => x.Phonce).NotEmpty().WithMessage("Phonce is required");
+            RuleFor(x => x.Phone).NotEmpty().WithMessage("Phonce is required");
             RuleFor(x => x.Country).NotEmpty().WithMessage("Country is required");
         }
     }

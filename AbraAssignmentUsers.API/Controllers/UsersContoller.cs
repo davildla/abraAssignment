@@ -1,10 +1,11 @@
 ﻿using AbraAssignmentUsers.API.Repositories;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AbraAssignmentUsers.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("Users")]
     public class UsersContoller : Controller
     {
         private readonly IUserRepository userRepository;
@@ -24,6 +25,64 @@ namespace AbraAssignmentUsers.API.Controllers
 
             return Ok(res);
         }
+
+        [HttpGet]
+        [Route("/get-users-data")]
+        public async Task<IActionResult> GetUsersData(string gender)
+        {
+            var res = await userRepository.GetUsersData(gender);
+
+            if (res == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(res);
+        }
+
+        [HttpGet]
+        [Route("/get-most-pupalar-country")]
+        public async Task<IActionResult> GetMostPupalarCountry()
+        {
+            var res = await userRepository.MostPupalarCountry();
+
+            if (res == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(new { country = res });
+        }
+
+
+        [HttpGet]
+        [Route("/get-mails")]
+        public async Task<IActionResult> GetListOfMails()
+        {
+            var res = await userRepository.GetListOfMalis();
+
+            if (res == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(new { mails = res });
+        }
+
+        [HttpGet]
+        [Route("/get-oldest")]
+        public async Task<IActionResult> GetTheOldestUser()
+        {
+            var res = await userRepository.GetTheOldestUser();
+
+            if (res == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(res);
+        }
+
 
         [HttpGet]
         [Route("{id:guid}")]
@@ -66,7 +125,7 @@ namespace AbraAssignmentUsers.API.Controllers
         }
 
         [HttpPut]
-        [Route("{id:guid}")]
+        [Route("/update/{id:guid}")]
 
         public async Task<IActionResult> UpdateUserData([FromRoute] Guid id, [FromBody] Models.DTO.UpdateUserRequest updateUserRequest)
         {

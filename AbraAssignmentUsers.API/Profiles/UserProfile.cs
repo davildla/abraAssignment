@@ -1,7 +1,12 @@
-﻿namespace AbraAssignmentUsers.API.Profiles
+﻿using AutoMapper;
+
+namespace AbraAssignmentUsers.API.Profiles
 {
     public class UserProfile : Profile
     {
-        CreateMap<Models.Domain.User, Models.DTO.User>().ReverseMap();
+        public UserProfile()
+        {
+            CreateMap<Models.Domain.User, Models.DTO.User>().ReverseMap();
+        }
     }
 }
